@@ -1,0 +1,39 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat App</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #eef; }
+    #chat { max-width: 600px; margin: auto; }
+    #messages { list-style: none; padding: 0; }
+    #messages li { margin: 5px 0; }
+    input, select { padding: 10px; margin-right: 10px; width: 60%; }
+    #users { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  
+
+
+  <div style="display: flex; justify-content: space-between;">
+  <h2>Welcome, <span id="usernameDisplay"></span>!</h2>
+  <button id="logoutBtn">Logout</button>
+  </div>
+  <div id="chat">
+    <h2>Welcome, <span id="userDisplay"></span>!</h2>
+    <select id="chatType">
+      <option value="group">Group Chat</option>
+      <option value="private">Private Chat</option>
+    </select>
+    <input id="toUser" placeholder="Receiver username (for private chat)">
+    <ul id="messages"></ul>
+    <input id="msgInput" placeholder="Enter message..." autocomplete="off">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
