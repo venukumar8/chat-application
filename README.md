@@ -37,5 +37,5 @@ discription:   this webpage is used to communicate with each other in a web site
                                   you can see two options private chat or group chat select one 
                                   and enter the id of the person or enter the id of the group
                                   and chat with them.
-                                  
+            utput:<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/2dded98d-acf7-4648-898f-45d53babd073" />                      
           
